@@ -32,17 +32,19 @@ header {
     float:left;
     width:155px;
     height:100px;
-    background-image: url("/johdanto_digitaalinen_palvelu/lounasravintola/styles/images/logo_sml.png");
-    background-size:100%;
-    background-repeat:no-repeat;
-    
     margin:0 0 0 0;
     
  
 }
 
 #logo h1{
-    display:none;
+   visibility: hidden;
+
+}
+
+#logo img {
+    height:auto;
+    
 }
 nav {
     width:50%;
@@ -77,9 +79,10 @@ clear:both;
 float:left;
 width:100%;
 height:200px;
-background: url("/johdanto_digitaalinen_palvelu/lounasravintola/styles/images/etusivukuva_desktop.png");
-background-size:100% 100%;
-background-repeat: no-repeat;
+}
+img {
+    width:100%;
+    height:100%;
 }
 
 main {
