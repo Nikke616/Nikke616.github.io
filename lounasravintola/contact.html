@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LuomuLounas</title>
+<link href="styles/reset.css" rel="stylesheet">
+<link href="styles/layout.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header> <!-- Sivuston yläosa, joka pysyy samanlaisena eri sivustoille siirryttäessä. -->
+
+        <div id="logo"><h1>LuomuLounas</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">etusivu</a></li>
+                <li><a href="menu.html">lounaslista</a></li>
+                <li><a href="#" class="active">palaute</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <div class="banner"></div> <!-- Sisältää sivustoilla esiintyvän suuren kuvakarusellin-->
+
+    <main> <!-- Sivuston pääsisältö, muuttuu sivustolta toiselle siirryttäessä-->
+        <form action="form.php">
+            <div class="kappale">
+              
+                <label for="enimi">Etunimi</label>
+              
+              <div class="kentta">
+                <input type="text" id="enimi" name="etunimi" placeholder="Tiina">
+              </div>
+            </div>
+            <div class="kappale">
+             
+                <label for="snimi">Sukunimi</label>
+              </div>
+              <div class="kentta">
+                <input type="text" id="snimi" name="sukunimi" placeholder="Tietotyöläinen">
+              </div>
+            
+            <div class="kappale">
+              
+                <label for="palaute">Palaute</label>
+              </div>
+              
+              <div class="kentta">
+                <textarea id="palaute" name="palaute" placeholder="Lähetä palautetta tai ruokatoiveesi" style="height:200px"></textarea>
+              </div>
+            
+            <div class="kappale">
+              <input type="submit" value="Lähetä">
+            </div>
+          </form>
+    </main>
+
+    <footer> <!-- Sivuston alaosa, pysyy muuttumattomana siirryttäessä sivustolta toiselle-->
+        <ul id="osoite">
+            <li>LuomuLounas</li>
+            <li>Kotikatu 22</li>
+            <li>01200 Vantaa</li>
+        </ul>
+
+        <ul id="yhteystiedot">
+            <li>Mikko Mallikas</li>
+            <li>0401234567</li>
+            <li>mikko.mallikas@luomulounas.fi</li>
+        </ul>
+    </footer>
+
+
+
+</body>
+</html>
